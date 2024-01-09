@@ -1,0 +1,80 @@
+*{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: rgb(98, 157, 102);
+    background-image: url(img/bg.png);
+    background-repeat: repeat-x;
+    font-family: "Trebuchet MS", Arial;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    'h h'
+    'ar as'
+    'f f'
+    ;
+}
+header{
+    grid-area: h;
+    background-image: url(img/logo1.jpg);
+    padding-left: 400px;
+    height: 180px;
+    
+}
+header h1{
+    color: white;
+    font-size: 80px;
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+    width: 700px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+aside p{
+    width: 600px;
+}
+footer{
+    grid-area: f;
+    font-size: 12px;
+    background-color: rgb(0, 124, 103);
+    text-align: center;
+    height: 30px;
+}
+article nav h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 200px;
+    background-color: rgb(0, 95, 71);
+}
+article nav{
+    background-color: rgb(150, 169, 111);
+    background-image: url(img/img02.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 200px;
+    
+}
+article nav li{
+    display: block;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+aside img{
+    display: block;
+    float: left;
+    padding-right: 10px ;
+}
